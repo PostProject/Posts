@@ -17,7 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     [UITabBar appearance].tintColor = APPCOLOR;
+    
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    NSMutableDictionary *muDic = [[NSMutableDictionary alloc] init];
+    muDic[NSForegroundColorAttributeName] = APPCOLOR;
+    muDic[NSFontAttributeName] = [UIFont boldSystemFontOfSize:16];
+    [navBar setTitleTextAttributes:muDic];
+    
     return YES;
 }
 
