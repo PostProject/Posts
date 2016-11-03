@@ -10,10 +10,19 @@
 		847D45931DCAE17D00BE00DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45921DCAE17D00BE00DA /* main.m */; };
 		847D45961DCAE17D00BE00DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45951DCAE17D00BE00DA /* AppDelegate.m */; };
 		847D45991DCAE17D00BE00DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45981DCAE17D00BE00DA /* ViewController.m */; };
-		847D459C1DCAE17D00BE00DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D459A1DCAE17D00BE00DA /* Main.storyboard */; };
 		847D459E1DCAE17D00BE00DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847D459D1DCAE17D00BE00DA /* Assets.xcassets */; };
 		847D45A11DCAE17D00BE00DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D459F1DCAE17D00BE00DA /* LaunchScreen.storyboard */; };
 		847D45AC1DCAE17E00BE00DA /* PostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45AB1DCAE17E00BE00DA /* PostTests.m */; };
+		847D45BD1DCB116400BE00DA /* MyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D45BC1DCB116400BE00DA /* MyStoryboard.storyboard */; };
+		847D45BF1DCB117300BE00DA /* MessageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D45BE1DCB117300BE00DA /* MessageStoryboard.storyboard */; };
+		847D45C11DCB118B00BE00DA /* FriendsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D45C01DCB118B00BE00DA /* FriendsStoryboard.storyboard */; };
+		847D45C31DCB119800BE00DA /* DynamicStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D45C21DCB119800BE00DA /* DynamicStoryboard.storyboard */; };
+		847D45C61DCB11EC00BE00DA /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45C51DCB11EC00BE00DA /* DynamicViewController.m */; };
+		847D45C91DCB127400BE00DA /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45C81DCB127400BE00DA /* FriendsViewController.m */; };
+		847D45CC1DCB12A000BE00DA /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45CB1DCB12A000BE00DA /* MessageViewController.m */; };
+		847D45CF1DCB12D800BE00DA /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45CE1DCB12D800BE00DA /* MyViewController.m */; };
+		847D45D21DCB131500BE00DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D45D11DCB131500BE00DA /* MainViewController.m */; };
+		847D45D41DCB136300BE00DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D45D31DCB136300BE00DA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +42,28 @@
 		847D45951DCAE17D00BE00DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		847D45971DCAE17D00BE00DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		847D45981DCAE17D00BE00DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		847D459B1DCAE17D00BE00DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		847D459D1DCAE17D00BE00DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847D45A01DCAE17D00BE00DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847D45A21DCAE17E00BE00DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847D45A71DCAE17E00BE00DA /* PostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847D45AB1DCAE17E00BE00DA /* PostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTests.m; sourceTree = "<group>"; };
 		847D45AD1DCAE17E00BE00DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847D45BC1DCB116400BE00DA /* MyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyStoryboard.storyboard; sourceTree = "<group>"; };
+		847D45BE1DCB117300BE00DA /* MessageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessageStoryboard.storyboard; sourceTree = "<group>"; };
+		847D45C01DCB118B00BE00DA /* FriendsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FriendsStoryboard.storyboard; sourceTree = "<group>"; };
+		847D45C21DCB119800BE00DA /* DynamicStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicStoryboard.storyboard; sourceTree = "<group>"; };
+		847D45C41DCB11EC00BE00DA /* DynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		847D45C51DCB11EC00BE00DA /* DynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
+		847D45C71DCB127400BE00DA /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		847D45C81DCB127400BE00DA /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		847D45CA1DCB12A000BE00DA /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		847D45CB1DCB12A000BE00DA /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		847D45CD1DCB12D800BE00DA /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		847D45CE1DCB12D800BE00DA /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		847D45D01DCB131500BE00DA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		847D45D11DCB131500BE00DA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		847D45D31DCB136300BE00DA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		847D45D81DCB1CB900BE00DA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +105,16 @@
 		847D45901DCAE17D00BE00DA /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				847D45D61DCB1CA500BE00DA /* Public */,
+				847D45BB1DCB113700BE00DA /* Main */,
+				847D45B71DCB10C900BE00DA /* My */,
+				847D45B81DCB10C900BE00DA /* Message */,
+				847D45B91DCB10C900BE00DA /* Friends */,
+				847D45BA1DCB10C900BE00DA /* Dynamic */,
 				847D45941DCAE17D00BE00DA /* AppDelegate.h */,
 				847D45951DCAE17D00BE00DA /* AppDelegate.m */,
 				847D45971DCAE17D00BE00DA /* ViewController.h */,
 				847D45981DCAE17D00BE00DA /* ViewController.m */,
-				847D459A1DCAE17D00BE00DA /* Main.storyboard */,
 				847D459D1DCAE17D00BE00DA /* Assets.xcassets */,
 				847D459F1DCAE17D00BE00DA /* LaunchScreen.storyboard */,
 				847D45A21DCAE17E00BE00DA /* Info.plist */,
@@ -97,6 +126,7 @@
 		847D45911DCAE17D00BE00DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				847D45D51DCB191800BE00DA /* Image */,
 				847D45921DCAE17D00BE00DA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -109,6 +139,79 @@
 				847D45AD1DCAE17E00BE00DA /* Info.plist */,
 			);
 			path = PostTests;
+			sourceTree = "<group>";
+		};
+		847D45B71DCB10C900BE00DA /* My */ = {
+			isa = PBXGroup;
+			children = (
+				847D45BC1DCB116400BE00DA /* MyStoryboard.storyboard */,
+				847D45CD1DCB12D800BE00DA /* MyViewController.h */,
+				847D45CE1DCB12D800BE00DA /* MyViewController.m */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		847D45B81DCB10C900BE00DA /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				847D45BE1DCB117300BE00DA /* MessageStoryboard.storyboard */,
+				847D45CA1DCB12A000BE00DA /* MessageViewController.h */,
+				847D45CB1DCB12A000BE00DA /* MessageViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		847D45B91DCB10C900BE00DA /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				847D45C01DCB118B00BE00DA /* FriendsStoryboard.storyboard */,
+				847D45C71DCB127400BE00DA /* FriendsViewController.h */,
+				847D45C81DCB127400BE00DA /* FriendsViewController.m */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		847D45BA1DCB10C900BE00DA /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				847D45C21DCB119800BE00DA /* DynamicStoryboard.storyboard */,
+				847D45C41DCB11EC00BE00DA /* DynamicViewController.h */,
+				847D45C51DCB11EC00BE00DA /* DynamicViewController.m */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		847D45BB1DCB113700BE00DA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				847D45D31DCB136300BE00DA /* Main.storyboard */,
+				847D45D01DCB131500BE00DA /* MainViewController.h */,
+				847D45D11DCB131500BE00DA /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		847D45D51DCB191800BE00DA /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		847D45D61DCB1CA500BE00DA /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				847D45D71DCB1CA500BE00DA /* Tool */,
+				847D45D81DCB1CB900BE00DA /* PrefixHeader.pch */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		847D45D71DCB1CA500BE00DA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +296,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847D45D41DCB136300BE00DA /* Main.storyboard in Resources */,
 				847D45A11DCAE17D00BE00DA /* LaunchScreen.storyboard in Resources */,
+				847D45BD1DCB116400BE00DA /* MyStoryboard.storyboard in Resources */,
+				847D45BF1DCB117300BE00DA /* MessageStoryboard.storyboard in Resources */,
 				847D459E1DCAE17D00BE00DA /* Assets.xcassets in Resources */,
-				847D459C1DCAE17D00BE00DA /* Main.storyboard in Resources */,
+				847D45C31DCB119800BE00DA /* DynamicStoryboard.storyboard in Resources */,
+				847D45C11DCB118B00BE00DA /* FriendsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,9 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847D45CC1DCB12A000BE00DA /* MessageViewController.m in Sources */,
+				847D45C91DCB127400BE00DA /* FriendsViewController.m in Sources */,
 				847D45991DCAE17D00BE00DA /* ViewController.m in Sources */,
+				847D45D21DCB131500BE00DA /* MainViewController.m in Sources */,
 				847D45961DCAE17D00BE00DA /* AppDelegate.m in Sources */,
+				847D45C61DCB11EC00BE00DA /* DynamicViewController.m in Sources */,
 				847D45931DCAE17D00BE00DA /* main.m in Sources */,
+				847D45CF1DCB12D800BE00DA /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,14 +350,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		847D459A1DCAE17D00BE00DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				847D459B1DCAE17D00BE00DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		847D459F1DCAE17D00BE00DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -349,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShiWenChen.7.Post;
@@ -360,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShiWenChen.7.Post;

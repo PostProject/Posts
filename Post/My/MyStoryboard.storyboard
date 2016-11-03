@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oLa-RM-3Qa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的-->
+        <scene sceneID="KjF-Fy-Sc0">
+            <objects>
+                <navigationController id="oLa-RM-3Qa" userLabel="我的" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="UserUnSelect" selectedImage="UserSelect" id="tlX-y6-cMz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UeZ-KQ-8Sx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vlX-MJ-lHK" kind="relationship" relationship="rootViewController" id="We7-hv-vI0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpK-fh-rOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-324" y="-268"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="xMY-Fa-NZd">
+            <objects>
+                <viewController id="vlX-MJ-lHK" userLabel="我的" customClass="MyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FF9-cS-iZd"/>
+                        <viewControllerLayoutGuide type="bottom" id="cWD-ML-rHx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1py-wt-GI5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8do-dF-Fte"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDP-3L-akz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-268"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UserSelect" width="23" height="22"/>
+        <image name="UserUnSelect" width="23" height="22"/>
+    </resources>
+</document>

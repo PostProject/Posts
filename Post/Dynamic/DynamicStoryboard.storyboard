@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LSi-07-mh8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--动态-->
+        <scene sceneID="9nw-TL-AMS">
+            <objects>
+                <navigationController id="LSi-07-mh8" userLabel="动态" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="动态" image="dynamicUnSelect" selectedImage="dynamicSelect" id="H40-bn-B9F"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L8u-QT-Nat">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nMc-0r-g2F" kind="relationship" relationship="rootViewController" id="PdU-NS-nVo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGI-Gn-ULn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786" y="-210"/>
+        </scene>
+        <!--动态-->
+        <scene sceneID="QRz-wR-bGP">
+            <objects>
+                <viewController id="nMc-0r-g2F" userLabel="动态" customClass="DynamicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D4m-41-nQb"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYv-Id-8Ye"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wbe-vf-nUb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZBm-Yp-woU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWY-Tt-8kv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="-210"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dynamicSelect" width="22" height="22"/>
+        <image name="dynamicUnSelect" width="22" height="22"/>
+    </resources>
+</document>
