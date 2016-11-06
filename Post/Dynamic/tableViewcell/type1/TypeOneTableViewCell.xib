@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -97,14 +97,13 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syh-5J-iuK">
                                     <rect key="frame" x="8" y="51" width="260" height="30"/>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="30" id="Rd3-7z-ODW"/>
                                     </constraints>
+                                    <state key="normal" backgroundImage="speckBg.jpeg"/>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voice.png" translatesAutoresizingMaskIntoConstraints="NO" id="8hN-HW-cDu">
                                     <rect key="frame" x="127" y="59" width="16" height="14"/>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="14" id="OEI-4u-3EO"/>
                                         <constraint firstAttribute="width" constant="16" id="p2e-sh-XHI"/>
@@ -219,6 +218,7 @@
         <image name="header.png" width="140" height="131"/>
         <image name="info.png" width="16" height="4"/>
         <image name="more.png" width="6" height="12"/>
+        <image name="speckBg.jpeg" width="493" height="62"/>
         <image name="voice.png" width="16" height="14"/>
     </resources>
 </document>

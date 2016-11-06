@@ -11,8 +11,15 @@
 #import "PostsModel.h"
 #import "TypeTowTableViewCell.h"
 #import "TypeThreeTableViewCell.h"
+#import "PostImage.h"
 
 
+/**
+ 出去消息后高度后Cell的高度
+*/
+#define TyptOneH 185
+#define TypeTwoH 276
+#define TypeThreeH 514
 
 @interface DynamicViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -91,30 +98,81 @@
     
     self.navigationItem.titleView = title;
     [self.view addSubview:self.mainScroll];
-    [self loadData];
+    [self.dynamicTable.mj_header beginRefreshing];
     
     
 }
 -(void)loadData{
-    PostsModel *posts1 = [[PostsModel alloc] init];
-    posts1.type = @"type1";
     
-//    posts.cellHeight = [Tool measureMutilineStringHeight:@"asdfkasldf" andFont:[UIFont systemFontOfSize:14] andWidthSetup:320] ;
-    posts1.cellHeight = 185;
-    [self.dataArray addObject:posts1];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    __weak DynamicViewController *weakSelf = self;
+    NSString *url = [NSString stringWithFormat:@"%@getPostByUserId?id=1",HostUrl];
+    [manager GET:url parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        MyLog(@"FlyElephant: %@", responseObject);
+        [weakSelf creatDataArrayFromObj:responseObject];
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        MyLog(@"FlyElephant: %@", error);
+        [[Toast shareToast] showContent:@"加载失败..." adTime:2];
+    }];
     
-    PostsModel *posts2 = [[PostsModel alloc] init];
-    posts2.type = @"type2";
-    posts2.cellHeight = 329;
-    [self.dataArray addObject:posts2];
+   
     
-    
-    PostsModel *posts3 = [[PostsModel alloc] init];
-    posts3.type = @"type3";
-    
-    posts3.cellHeight = 564;
-    [self.dataArray addObject:posts3];
-    
+}
+-(void)creatDataArrayFromObj:(id)obj{
+    NSDictionary *dicData = obj;
+    MyLog(@"%@",dicData);
+    NSArray *contentArray = [dicData objectForKey:@"content"];
+    if (contentArray.count == 0 ) {
+        [[Toast shareToast] showContent:@"暂无帖子" adTime:2];
+        return;
+    }
+    for (NSDictionary *dic in contentArray) {
+        MyLog(@"%@",[dic objectForKey:@"post"]);
+        NSDictionary *postDic = [dic objectForKey:@"post"];
+        PostsModel *posts = [PostsModel mj_objectWithKeyValues:postDic];
+        NSArray *imageArray = [dic objectForKey:@"postImages"];
+        for (NSDictionary *imageDic in imageArray) {
+            PostImage *postImage = [PostImage mj_objectWithKeyValues:imageDic];
+            [posts.postImageArray  addObject:postImage];
+        }
+        if ([posts.content isEqualToString:@"音频"]) {
+            posts.isAudo = YES;
+        }
+        ///判断类型
+        if (posts.isAudo) {
+            posts.type = 1;
+        }else if (posts.postImageArray.count <= 1 && !posts.isAudo) {
+            posts.type = 2;
+        }else{
+            posts.type = 3;
+        }
+        ///设置消息高度
+        if (!posts.isAudo) {
+            posts.lbMessageHeight = [Tool measureMutilineStringHeight:posts.content andFont:MessageFont andWidthSetup:UISCREW - 20];
+        }
+        if (posts.lbMessageHeight > 53) {
+            posts.isCoverHiden = YES;
+        }
+        if (posts.type == 1) {
+            posts.cellHeight = TyptOneH;
+        }
+        if (posts.type == 2) {
+            posts.cellHeight = TypeTwoH + posts.lbMessageHeight;
+
+        }
+        if (posts.type == 3) {
+            if (posts.postImageArray.count > 3) {
+                posts.cellHeight = TypeThreeH + posts.lbMessageHeight;
+
+            }else{
+                posts.cellHeight = TypeThreeH + posts.lbMessageHeight - 123;
+            }
+        }
+        
+        [self.dataArray addObject:posts];
+    }
+    [self.dynamicTable.mj_header endRefreshing];
+    [self.dynamicTable reloadData];
 }
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
@@ -142,6 +200,13 @@
         _dynamicTable.delegate = self;
         _dynamicTable.dataSource = self;
         _dynamicTable.tag = 0;
+        MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+        [header setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
+        [header setTitle:@"松手可刷新" forState:MJRefreshStatePulling];
+        [header setTitle:@"加载中..." forState:MJRefreshStateRefreshing];
+        _dynamicTable.mj_header = header;
+        
+//        _dynamicTable.mj_header.
         _dynamicTable.contentInset = UIEdgeInsetsZero;
         
         _dynamicTable.scrollIndicatorInsets = UIEdgeInsetsZero;
@@ -150,7 +215,7 @@
 }
 -(UITableView *)circleTable{
     if (!_circleTable) {
-        _circleTable = [[UITableView alloc] initWithFrame:CGRectMake(UISCREW, 0, UISCREW, UISCREH -108) style:UITableViewStyleGrouped];
+        _circleTable = [[UITableView alloc] initWithFrame:CGRectMake(UISCREW, 64, UISCREW, UISCREH -108) style:UITableViewStyleGrouped];
         _circleTable.backgroundColor = [UIColor redColor];
         _circleTable.delegate = self;
         _circleTable.dataSource = self;
@@ -185,6 +250,8 @@
         MyLog(@"搜索");
         return;
     }
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"AddPostsStoryboard" bundle:nil];
+    [self presentViewController:storyBoard.instantiateInitialViewController animated:YES completion:nil];
     MyLog(@"添加");
 }
 - (void)didReceiveMemoryWarning {
@@ -196,21 +263,29 @@
     
     NSInteger tag = tableView.tag;
     if (tag == 0) {
-        if ([posts.type isEqualToString: @"type1"]) {
+        if (posts.type == 1) {
             static NSString *cellID = @"TypeOneTableViewCell";
             TypeOneTableViewCell *myCell = [tableView dequeueReusableCellWithIdentifier:cellID];
             if (!myCell) {
                 myCell = [[[NSBundle mainBundle]loadNibNamed:cellID owner:self options:nil] firstObject];
-                [myCell.hotScrollView addSubview:myCell.postsView];
                 
             }
+#warning 给各种控件赋值即可
+            [myCell.hotScrollView addSubview:myCell.postsView];
             return myCell;
-        }else if ([posts.type isEqualToString: @"type2"]) {
+        }else if (posts.type == 2) {
             static NSString *cellID = @"TypeTowTableViewCell";
             TypeTowTableViewCell *myCell = [tableView dequeueReusableCellWithIdentifier:cellID];
             if (!myCell) {
                 myCell = [[[NSBundle mainBundle]loadNibNamed:cellID owner:self options:nil] firstObject];
-                myCell.messageHeight.constant = 51;
+                
+            }
+            myCell.messageHeight.constant = posts.lbMessageHeight;
+            myCell.lbMessage.text = posts.content;
+            if (posts.isCoverHiden) {
+                myCell.imageViewTop.constant = 1;
+            }else{
+                myCell.imageViewTop.constant = 16;
             }
             return myCell;
         }else{
@@ -218,6 +293,14 @@
             TypeThreeTableViewCell *myCell = [tableView dequeueReusableCellWithIdentifier:cellID];
             if (!myCell) {
                 myCell = [[[NSBundle mainBundle]loadNibNamed:cellID owner:self options:nil] firstObject];
+            }
+            myCell.messageHeight.constant = posts.lbMessageHeight;
+            if (posts.isCoverHiden) {
+                myCell.imageViewTop.constant = 1;
+                myCell.imageViewTop1.constant = 1;
+            }else{
+                myCell.imageViewTop.constant = 16;
+                myCell.imageViewTop1.constant = 16;
             }
             return myCell;
         }
@@ -242,7 +325,9 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 0.1;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.dataArray.count;
 }
@@ -250,6 +335,8 @@
     PostsModel *model = [self.dataArray objectAtIndex:indexPath.section];
     return model.cellHeight;
 }
+
+
 /*
 #pragma mark - Navigation
 

@@ -16,10 +16,15 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "Tool.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "Singleton.h"
+#import "Toast.h"
+#import "MJExtension.h"
 
 #define APPCOLOR [UIColor colorWithRed:81/255.0 green:141/255.0 blue:44/255.0 alpha:1]
 #define UISCREW [UIScreen mainScreen].bounds.size.width
 #define UISCREH [UIScreen mainScreen].bounds.size.height
-
-
+#define MessageFont [UIFont systemFontOfSize:12]
+#define HostUrl @"http://60.214.113.147:9090/SNS/api/"
 #endif /* PrefixHeader_pch */

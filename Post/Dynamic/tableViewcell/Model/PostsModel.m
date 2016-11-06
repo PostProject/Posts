@@ -9,5 +9,13 @@
 #import "PostsModel.h"
 
 @implementation PostsModel
+-(instancetype)init{
+    self =  [super init];
+    if (self) {
+        self.postImageArray = [[NSMutableArray alloc] init];
+    }
+    
+    return self;
+}
 
 @end
