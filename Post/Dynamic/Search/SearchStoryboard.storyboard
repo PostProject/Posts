@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jwe-5N-a9P">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--search-->
+        <scene sceneID="w0v-oU-wu5">
+            <objects>
+                <navigationController id="jwe-5N-a9P" userLabel="search" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yUT-IE-a7r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nl2-Rf-3fh" kind="relationship" relationship="rootViewController" id="3wV-gT-0zd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkU-QN-WoN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1066" y="45"/>
+        </scene>
+        <!--Search Table View Controller-->
+        <scene sceneID="lNr-vQ-5yh">
+            <objects>
+                <tableViewController id="nl2-Rf-3fh" customClass="SearchTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="e4F-fN-9v6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Rbn-Qo-Eh7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rbn-Qo-Eh7" id="YjO-EP-uUk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nl2-Rf-3fh" id="uXH-Uc-yYf"/>
+                            <outlet property="delegate" destination="nl2-Rf-3fh" id="hWM-Ax-IXP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MYK-Qn-5Id">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="gF5-gS-cM6">
+                            <rect key="frame" x="31" y="0.0" width="262" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="znl-NH-v8u">
+                                    <rect key="frame" x="0.0" y="0.0" width="262" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="nl2-Rf-3fh" id="Doz-8e-Dhg"/>
+                                    </connections>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="AMK-6U-vA6">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fRW-sS-A01">
+                                <rect key="frame" x="299" y="7" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="取消">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="nl2-Rf-3fh" eventType="touchUpInside" id="AVp-hy-PcS"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="i7V-dn-EMp" id="yYa-gs-jDq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7N-cW-Jhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="i7V-dn-EMp">
+                    <connections>
+                        <outlet property="delegate" destination="nl2-Rf-3fh" id="Vd7-vk-J96"/>
+                        <outlet property="searchBar" destination="znl-NH-v8u" id="Pl6-a2-hOC"/>
+                        <outlet property="searchContentsController" destination="nl2-Rf-3fh" id="eSt-GJ-hGx"/>
+                        <outlet property="searchResultsDataSource" destination="nl2-Rf-3fh" id="3IU-6B-thP"/>
+                        <outlet property="searchResultsDelegate" destination="nl2-Rf-3fh" id="2Yt-VP-bcZ"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-316" y="25"/>
+        </scene>
+    </scenes>
+</document>

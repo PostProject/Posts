@@ -246,13 +246,18 @@
     }
 }
 -(void)topAction:(UIButton *)btn{
+    UIStoryboard *storyBoard;
     if (btn.tag == 1) {
         MyLog(@"搜索");
-        return;
+        storyBoard = [UIStoryboard storyboardWithName:@"SearchStoryboard" bundle:nil];
+        
+    }else{
+        MyLog(@"添加");
+       storyBoard = [UIStoryboard storyboardWithName:@"AddPostsStoryboard" bundle:nil];
     }
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"AddPostsStoryboard" bundle:nil];
+    
     [self presentViewController:storyBoard.instantiateInitialViewController animated:YES completion:nil];
-    MyLog(@"添加");
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

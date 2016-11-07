@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,7 +54,7 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bB0-dK-uHd">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bB0-dK-uHd">
                         <rect key="frame" x="0.0" y="27" width="375" height="302"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="wQi-6B-bRN" userLabel="head">
@@ -293,7 +293,7 @@
                             <constraint firstItem="NIm-po-HhO" firstAttribute="top" secondItem="bB0-dK-uHd" secondAttribute="top" constant="23" id="OhK-qz-eWs"/>
                             <constraint firstItem="B3c-7H-zoY" firstAttribute="top" secondItem="wQi-6B-bRN" secondAttribute="bottom" constant="51" id="PHP-SK-MiR"/>
                             <constraint firstItem="sIl-BH-ouU" firstAttribute="top" secondItem="Z5P-Wp-beS" secondAttribute="bottom" id="PNv-3w-Zn3"/>
-                            <constraint firstAttribute="height" constant="272" id="RQX-PP-qoG"/>
+                            <constraint firstAttribute="height" constant="302" id="RQX-PP-qoG"/>
                             <constraint firstItem="B1a-kh-V6X" firstAttribute="leading" secondItem="wQi-6B-bRN" secondAttribute="trailing" constant="8" id="RhY-yO-Oa5"/>
                             <constraint firstItem="Z5P-Wp-beS" firstAttribute="top" secondItem="9cx-EO-ZNI" secondAttribute="bottom" constant="15" id="Uw6-B2-JmK"/>
                             <constraint firstItem="qRI-mL-f4X" firstAttribute="top" secondItem="bB0-dK-uHd" secondAttribute="top" constant="10" id="YCK-Kw-tSU"/>

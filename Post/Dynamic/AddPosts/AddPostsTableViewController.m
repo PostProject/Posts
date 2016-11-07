@@ -79,6 +79,10 @@
 ///发布
 - (IBAction)relaeseAction:(id)sender {
     MyLog(@"发布");
+    if ([self.messageTextView.text isEqualToString:@""]&&self.speckView.hidden) {
+        [[Toast shareToast]showContent:@"请输入当前心情或语音" adTime:2];
+        return;
+    }
 }
 /**
   跳往定位

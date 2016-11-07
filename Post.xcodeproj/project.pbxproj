@@ -148,6 +148,8 @@
 		847D47491DCC77C600BE00DA /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 847D47431DCC77C600BE00DA /* comment@2x.png */; };
 		847D474A1DCC77C600BE00DA /* comment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 847D47441DCC77C600BE00DA /* comment@3x.png */; };
 		847D474D1DCC8C0300BE00DA /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D474C1DCC8C0300BE00DA /* Tool.m */; };
+		84AD72031DD0321C00E76947 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */; };
+		84AD72061DD0324100E76947 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD72051DD0324100E76947 /* SearchTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -388,6 +390,9 @@
 		847D47441DCC77C600BE00DA /* comment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@3x.png"; sourceTree = "<group>"; };
 		847D474B1DCC8C0300BE00DA /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		847D474C1DCC8C0300BE00DA /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
+		84AD72041DD0324100E76947 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		84AD72051DD0324100E76947 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -749,6 +754,7 @@
 		847D45BA1DCB10C900BE00DA /* Dynamic */ = {
 			isa = PBXGroup;
 			children = (
+				84AD72011DD0320C00E76947 /* Search */,
 				4C09DBDF1DCF170B0097A27D /* AddPosts */,
 				847D46F61DCB444700BE00DA /* tableViewcell */,
 				847D45C21DCB119800BE00DA /* DynamicStoryboard.storyboard */,
@@ -904,6 +910,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		84AD72011DD0320C00E76947 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */,
+				84AD72041DD0324100E76947 /* SearchTableViewController.h */,
+				84AD72051DD0324100E76947 /* SearchTableViewController.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -992,6 +1008,7 @@
 				847D470B1DCC3B0100BE00DA /* voice@3x.png in Resources */,
 				847D46F21DCB3D1800BE00DA /* search@3x.png in Resources */,
 				847D47461DCC77C600BE00DA /* shear@2x.png in Resources */,
+				84AD72031DD0321C00E76947 /* SearchStoryboard.storyboard in Resources */,
 				847D47391DCC773700BE00DA /* ThumbsUp.png in Resources */,
 				847D46F11DCB3D1800BE00DA /* search@2x.png in Resources */,
 				847D474A1DCC77C600BE00DA /* comment@3x.png in Resources */,
@@ -1088,6 +1105,7 @@
 				4C3C6FBA1DCCF38600E2B74C /* MJRefreshStateHeader.m in Sources */,
 				4C3C6FB21DCCF38500E2B74C /* MJRefreshAutoGifFooter.m in Sources */,
 				4C09DBA91DCDD9650097A27D /* AFURLRequestSerialization.m in Sources */,
+				84AD72061DD0324100E76947 /* SearchTableViewController.m in Sources */,
 				4C09DBD51DCE2B410097A27D /* NSString+MJExtension.m in Sources */,
 				847D47151DCC3E1F00BE00DA /* PostsView.m in Sources */,
 				4C9BB5EE1DCF3DFA00E4FBB2 /* IPImageCell.m in Sources */,
@@ -1271,7 +1289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/chenshiwen/Documents/私人项目/CompanyPost/Post/Public/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1284,7 +1302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "/Users/chenshiwen/Documents/私人项目/CompanyPost/Post/Public/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
