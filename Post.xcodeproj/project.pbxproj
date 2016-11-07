@@ -969,7 +969,7 @@
 				TargetAttributes = {
 					847D458D1DCAE17D00BE00DA = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					847D45A61DCAE17E00BE00DA = {
 						CreatedOnToolsVersion = 8.1;
@@ -1289,12 +1289,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weiwei Li (HPS3NNUC52)";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShiWenChen.7.Post;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa49f3a7-e156-4922-a2d5-66fec30dc44f";
+				PROVISIONING_PROFILE_SPECIFIER = TestApp;
 			};
 			name = Debug;
 		};
@@ -1302,12 +1306,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weiwei Li (HPS3NNUC52)";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShiWenChen.7.Post;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "aa49f3a7-e156-4922-a2d5-66fec30dc44f";
+				PROVISIONING_PROFILE_SPECIFIER = TestApp;
 			};
 			name = Release;
 		};

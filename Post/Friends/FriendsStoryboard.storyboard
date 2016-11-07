@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yHj-ew-gwD"/>
+                    <navigationItem key="navigationItem" title="好友" id="yHj-ew-gwD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1D-zc-bCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

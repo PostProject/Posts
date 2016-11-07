@@ -443,7 +443,12 @@ static NSString *IPicker_CollectionID = @"IPicker_CollectionID";
  *  右上角 完成 按钮点击
  */
 - (void)completeBtnClick{
+    if (_selectPhotoCount >6) {
+        [[Toast shareToast] showContent:@"清上传少于6张图片" adTime:2];
+        return;
+    }
     if (self.delegate && [self.delegate respondsToSelector:@selector(didClickCompleteBtn:)]) {
+        
         [self.delegate didClickCompleteBtn:[self.priCurrentSelArr copy]];
     }
     [self exitIPicker];

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"信息";
+//    self.title = @"信息";
     // Do any additional setup after loading the view.
 }
 

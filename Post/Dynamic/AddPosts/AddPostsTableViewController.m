@@ -12,6 +12,11 @@
 #import "IPickerViewController.h"
 
 @interface AddPostsTableViewController ()<IPickerViewControllerDelegate>
+
+{
+    int _imageNum;
+}
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *picImageViewH;
 @property (weak, nonatomic) IBOutlet UIView *picImageView;
 @property (weak, nonatomic) IBOutlet UITextView *messageTextView;
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
@@ -22,6 +27,7 @@
 @property (nonatomic , strong) SelectView *selectView;
 @property (nonatomic , strong) IPickerViewController *imagePickerController;
 @property (nonatomic , strong) IPAssetManager *defaultAssetManager;
+
 //@property (nonatomic, strong)UIImageView *img2;
 @end
 
@@ -48,6 +54,12 @@
     }
     return _selectView;
 }
+
+/**
+ 添加语音
+
+ @param gesture <#gesture description#>
+ */
 -(void)addSpeck:(UILongPressGestureRecognizer*)gesture{
     UIGestureRecognizerState state = gesture.state;
     switch (state) {
@@ -78,11 +90,13 @@
 }
 ///发布
 - (IBAction)relaeseAction:(id)sender {
-    MyLog(@"发布");
-    if ([self.messageTextView.text isEqualToString:@""]&&self.speckView.hidden) {
+    
+    if ([self.messageTextView.text isEqualToString:@""]&&self.speckView.hidden && _imageNum == 0) {
+        
         [[Toast shareToast]showContent:@"请输入当前心情或语音" adTime:2];
         return;
     }
+    MyLog(@"发布");
 }
 /**
   跳往定位
@@ -100,31 +114,54 @@
     if (!_imagePickerController) {
         _imagePickerController = [IPickerViewController instanceWithDisplayStyle:IPickerViewControllerDisplayStyleImage];
         _imagePickerController.delegate = self;
-        _imagePickerController.maxCount = 9;
+//        _imagePickerController.maxCount = 6;
         _imagePickerController.popStyle = IPickerViewControllerPopStylePush;
     }
     return _imagePickerController;
    
 }
 -(void)addImageAction{
+    for (UIView *view in self.picImageView.subviews) {
+        if ([view isKindOfClass:[UIImageView class]]) {
+            [view removeFromSuperview];
+        }
+    }
+    _imageNum = 0;
     [self presentViewController:self.imagePickerController animated:YES completion:nil];
 }
 
+/**
+ 上传照片
+
+ @param datas <#datas description#>
+ */
 - (void)didClickCompleteBtn:(NSArray *)datas{
     [datas enumerateObjectsUsingBlock:^(IPAssetModel *obj, NSUInteger idx, BOOL * _Nonnull stop) {
         MyLog(@"%@--%@",obj.localIdentiy,obj.assetUrl.absoluteString);
-        if (idx >6) {
+        
+        if (idx <=6) {
+            [[IPAssetManager defaultAssetManager] getAspectThumbailWithModel:obj completion:^(UIImage *photo, NSDictionary *info) {
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    _imageNum ++;
+                    int imageW = UISCREW / 3 - 10;
+                    
+                    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((imageW + 10 )* idx , 0, imageW, imageW)];
+                    if (_imageNum > 3) {
+                        NSInteger index = _imageNum - 4;
+                        imageView.frame = CGRectMake((imageW + 10 )* index , imageW + 10, imageW, imageW);
+                    }
+                    imageView.image = photo;
+                    [self.picImageView addSubview:imageView];
+                    [self.tableView reloadData];
+                });
+            }];
+            
+        }else{
             [[Toast shareToast]showContent:@"请上传过少于6张照片" adTime:2];
             return;
         }
-        [[IPAssetManager defaultAssetManager] getAspectThumbailWithModel:obj completion:^(UIImage *photo, NSDictionary *info) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(70 * idx , 0, 60, 60)];
-                imageView.image = photo;
-                [self.picImageView addSubview:imageView];
-                [self.tableView reloadData];
-            });
-        }];
+        
         
     }];
     
@@ -140,17 +177,9 @@
     return 0.1;
 }
 -(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     [self.messageTextView becomeFirstResponder];
 }
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    NSString *cellId=@"cellId";
-//    UITableViewCell *myCell=[tableView dequeueReusableCellWithIdentifier:cellId];
-//    
-//    return myCell;
-//}
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return 3;
-//}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

@@ -213,18 +213,18 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="HYC-m5-9hv">
-                                        <rect key="frame" x="0.0" y="211" width="375" height="180"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="369" id="HYC-m5-9hv">
+                                        <rect key="frame" x="0.0" y="211" width="375" height="369"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HYC-m5-9hv" id="Hv4-zw-UKR">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="368"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0O-MF-3It">
-                                                    <rect key="frame" x="8" y="0.0" width="359" height="179"/>
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="129"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="179" id="IgV-ji-q62"/>
+                                                        <constraint firstAttribute="height" constant="129" id="IgV-ji-q62"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -278,6 +278,7 @@
                         <outlet property="lbName" destination="VQ7-9g-q4H" id="J4x-Iu-lVw"/>
                         <outlet property="messageTextView" destination="3Mf-Zb-XFk" id="sxt-7g-kQ2"/>
                         <outlet property="picImageView" destination="G0O-MF-3It" id="tuH-kq-V1J"/>
+                        <outlet property="picImageViewH" destination="5uc-iX-cNI" id="tJ9-44-m4Y"/>
                         <outlet property="speckView" destination="BQF-pD-zKr" id="dbM-kg-M2Y"/>
                     </connections>
                 </tableViewController>

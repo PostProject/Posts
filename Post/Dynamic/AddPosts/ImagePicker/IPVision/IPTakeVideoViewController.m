@@ -201,7 +201,7 @@
 //    [_tipLabel setFontKey:textfont04];
     [_tipLabel setTextColor:[UIColor whiteColor]];
     [_tipLabel setTextAlignment:NSTextAlignmentCenter];
-    [_tipLabel setText:@"长按蓝色按钮进行拍摄"];
+//    [_tipLabel setText:@"长按蓝色按钮进行拍摄"];
     [middleView addSubview:_tipLabel];
     
     _progressBar = [[IPCaptureProgressBar alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(_previewView.frame), ScreenSize.width, 10)];

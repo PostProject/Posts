@@ -27,9 +27,16 @@
 @property (nonatomic, assign) int  sharenum;
 @property (nonatomic, assign) int  state;
 @property (nonatomic, assign) int  type;
+
+/**
+ 是否是语音
+ */
 @property (nonatomic, assign) BOOL  isAudo;
 @property (nonatomic , strong) NSMutableArray *postImageArray;
 
+/**
+ 展开按钮是否隐藏
+ */
 @property (nonatomic, assign) BOOL  isCoverHiden;
 
 
