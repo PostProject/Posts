@@ -22,6 +22,25 @@
 #import "Toast.h"
 #import "MJExtension.h"
 
+
+#import "BaseViewController.h"
+#import "UIView+WP.h"
+#import "UIColor+WP.h"
+#import "NSString+WP.h"
+
+//  屏幕宽高
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define SINGLE_LINE (1 / [UIScreen mainScreen].scale)
+
+// 获取导航状态栏的高度
+#define NavStatusBarHeight 64
+// 获取底部tabbar的高度
+#define TabBarHeight 49
+
+
+// 文本字号设置
+#define FontSize(font) [UIFont systemFontOfSize:font]
 #define APPCOLOR [UIColor colorWithRed:81/255.0 green:141/255.0 blue:44/255.0 alpha:1]
 #define UISCREW [UIScreen mainScreen].bounds.size.width
 #define UISCREH [UIScreen mainScreen].bounds.size.height
