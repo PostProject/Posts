@@ -22,6 +22,9 @@
 #import "Toast.h"
 #import "MJExtension.h"
 
+
+#import "WPDefine.h"
+
 #define APPCOLOR [UIColor colorWithRed:81/255.0 green:141/255.0 blue:44/255.0 alpha:1]
 #define UISCREW [UIScreen mainScreen].bounds.size.width
 #define UISCREH [UIScreen mainScreen].bounds.size.height

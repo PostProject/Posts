@@ -150,6 +150,26 @@
 		847D474D1DCC8C0300BE00DA /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D474C1DCC8C0300BE00DA /* Tool.m */; };
 		84AD72031DD0321C00E76947 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */; };
 		84AD72061DD0324100E76947 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD72051DD0324100E76947 /* SearchTableViewController.m */; };
+		B86204711DD1989100A5B2D7 /* AccountSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204681DD1989100A5B2D7 /* AccountSafeViewController.m */; };
+		B86204721DD1989100A5B2D7 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B862046A1DD1989100A5B2D7 /* MineTableViewCell.m */; };
+		B86204731DD1989100A5B2D7 /* MyCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B862046C1DD1989100A5B2D7 /* MyCircleViewController.m */; };
+		B86204741DD1989100A5B2D7 /* MyFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B862046E1DD1989100A5B2D7 /* MyFriendViewController.m */; };
+		B86204751DD1989100A5B2D7 /* MyPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204701DD1989100A5B2D7 /* MyPostViewController.m */; };
+		B862047A1DD199D500A5B2D7 /* UIView+WP.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204791DD199D500A5B2D7 /* UIView+WP.m */; };
+		B862047E1DD19A4600A5B2D7 /* UIColor+WP.m in Sources */ = {isa = PBXBuildFile; fileRef = B862047D1DD19A4600A5B2D7 /* UIColor+WP.m */; };
+		B86204841DD19BB400A5B2D7 /* PrivacySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204811DD19BB400A5B2D7 /* PrivacySettingViewController.m */; };
+		B86204851DD19BB400A5B2D7 /* WPPrivicyTableViewCell11.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204831DD19BB400A5B2D7 /* WPPrivicyTableViewCell11.m */; };
+		B86204921DD19C4E00A5B2D7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204891DD19C4E00A5B2D7 /* BaseViewController.m */; };
+		B86204931DD19C4E00A5B2D7 /* ChangePhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B862048B1DD19C4E00A5B2D7 /* ChangePhoneViewController.m */; };
+		B86204941DD19C4E00A5B2D7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B862048D1DD19C4E00A5B2D7 /* LoginViewController.m */; };
+		B86204951DD19C4E00A5B2D7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B862048F1DD19C4E00A5B2D7 /* RegisterViewController.m */; };
+		B86204961DD19C4E00A5B2D7 /* ResetPswViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204911DD19C4E00A5B2D7 /* ResetPswViewController.m */; };
+		B862049C1DD19CB800A5B2D7 /* UIBarButtonItem+WP.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204991DD19CB800A5B2D7 /* UIBarButtonItem+WP.m */; };
+		B862049D1DD19CB800A5B2D7 /* UIButton+WP.m in Sources */ = {isa = PBXBuildFile; fileRef = B862049B1DD19CB800A5B2D7 /* UIButton+WP.m */; };
+		B86204A11DD19CF000A5B2D7 /* NSString+WP.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204A01DD19CF000A5B2D7 /* NSString+WP.m */; };
+		B86204A51DD19D6D00A5B2D7 /* WPHelpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204A41DD19D6D00A5B2D7 /* WPHelpUtil.m */; };
+		B86204AE1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204AD1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.m */; };
+		B86204B11DD1A27000A5B2D7 /* WPNoticeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204B01DD1A27000A5B2D7 /* WPNoticeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -393,6 +413,47 @@
 		84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
 		84AD72041DD0324100E76947 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
 		84AD72051DD0324100E76947 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		B86204671DD1989100A5B2D7 /* AccountSafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSafeViewController.h; sourceTree = "<group>"; };
+		B86204681DD1989100A5B2D7 /* AccountSafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSafeViewController.m; sourceTree = "<group>"; };
+		B86204691DD1989100A5B2D7 /* MineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
+		B862046A1DD1989100A5B2D7 /* MineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
+		B862046B1DD1989100A5B2D7 /* MyCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCircleViewController.h; sourceTree = "<group>"; };
+		B862046C1DD1989100A5B2D7 /* MyCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCircleViewController.m; sourceTree = "<group>"; };
+		B862046D1DD1989100A5B2D7 /* MyFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFriendViewController.h; sourceTree = "<group>"; };
+		B862046E1DD1989100A5B2D7 /* MyFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFriendViewController.m; sourceTree = "<group>"; };
+		B862046F1DD1989100A5B2D7 /* MyPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPostViewController.h; sourceTree = "<group>"; };
+		B86204701DD1989100A5B2D7 /* MyPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPostViewController.m; sourceTree = "<group>"; };
+		B86204781DD199D500A5B2D7 /* UIView+WP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WP.h"; sourceTree = "<group>"; };
+		B86204791DD199D500A5B2D7 /* UIView+WP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WP.m"; sourceTree = "<group>"; };
+		B862047C1DD19A4600A5B2D7 /* UIColor+WP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WP.h"; sourceTree = "<group>"; };
+		B862047D1DD19A4600A5B2D7 /* UIColor+WP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WP.m"; sourceTree = "<group>"; };
+		B862047F1DD19AF200A5B2D7 /* WPDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDefine.h; sourceTree = "<group>"; };
+		B86204801DD19BB400A5B2D7 /* PrivacySettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacySettingViewController.h; sourceTree = "<group>"; };
+		B86204811DD19BB400A5B2D7 /* PrivacySettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivacySettingViewController.m; sourceTree = "<group>"; };
+		B86204821DD19BB400A5B2D7 /* WPPrivicyTableViewCell11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPPrivicyTableViewCell11.h; sourceTree = "<group>"; };
+		B86204831DD19BB400A5B2D7 /* WPPrivicyTableViewCell11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPPrivicyTableViewCell11.m; sourceTree = "<group>"; };
+		B86204881DD19C4E00A5B2D7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B86204891DD19C4E00A5B2D7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		B862048A1DD19C4E00A5B2D7 /* ChangePhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePhoneViewController.h; sourceTree = "<group>"; };
+		B862048B1DD19C4E00A5B2D7 /* ChangePhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePhoneViewController.m; sourceTree = "<group>"; };
+		B862048C1DD19C4E00A5B2D7 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B862048D1DD19C4E00A5B2D7 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B862048E1DD19C4E00A5B2D7 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		B862048F1DD19C4E00A5B2D7 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		B86204901DD19C4E00A5B2D7 /* ResetPswViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPswViewController.h; sourceTree = "<group>"; };
+		B86204911DD19C4E00A5B2D7 /* ResetPswViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPswViewController.m; sourceTree = "<group>"; };
+		B86204981DD19CB800A5B2D7 /* UIBarButtonItem+WP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WP.h"; sourceTree = "<group>"; };
+		B86204991DD19CB800A5B2D7 /* UIBarButtonItem+WP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WP.m"; sourceTree = "<group>"; };
+		B862049A1DD19CB800A5B2D7 /* UIButton+WP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WP.h"; sourceTree = "<group>"; };
+		B862049B1DD19CB800A5B2D7 /* UIButton+WP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WP.m"; sourceTree = "<group>"; };
+		B862049F1DD19CF000A5B2D7 /* NSString+WP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WP.h"; sourceTree = "<group>"; };
+		B86204A01DD19CF000A5B2D7 /* NSString+WP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WP.m"; sourceTree = "<group>"; };
+		B86204A31DD19D6D00A5B2D7 /* WPHelpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHelpUtil.h; sourceTree = "<group>"; };
+		B86204A41DD19D6D00A5B2D7 /* WPHelpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHelpUtil.m; sourceTree = "<group>"; };
+		B86204AC1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsFriendTableViewCell.h; sourceTree = "<group>"; };
+		B86204AD1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsFriendTableViewCell.m; sourceTree = "<group>"; };
+		B86204AF1DD1A27000A5B2D7 /* WPNoticeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPNoticeTableViewCell.h; sourceTree = "<group>"; };
+		B86204B01DD1A27000A5B2D7 /* WPNoticeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNoticeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -685,6 +746,8 @@
 		847D45901DCAE17D00BE00DA /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				B86204871DD19C4E00A5B2D7 /* Login */,
+				B86204761DD199D500A5B2D7 /* WPFile */,
 				847D45D61DCB1CA500BE00DA /* Public */,
 				847D45BB1DCB113700BE00DA /* Main */,
 				847D45B71DCB10C900BE00DA /* My */,
@@ -724,9 +787,20 @@
 		847D45B71DCB10C900BE00DA /* My */ = {
 			isa = PBXGroup;
 			children = (
+				B86204861DD19BB800A5B2D7 /* Privacy */,
 				847D45BC1DCB116400BE00DA /* MyStoryboard.storyboard */,
 				847D45CD1DCB12D800BE00DA /* MyViewController.h */,
 				847D45CE1DCB12D800BE00DA /* MyViewController.m */,
+				B86204671DD1989100A5B2D7 /* AccountSafeViewController.h */,
+				B86204681DD1989100A5B2D7 /* AccountSafeViewController.m */,
+				B86204691DD1989100A5B2D7 /* MineTableViewCell.h */,
+				B862046A1DD1989100A5B2D7 /* MineTableViewCell.m */,
+				B862046B1DD1989100A5B2D7 /* MyCircleViewController.h */,
+				B862046C1DD1989100A5B2D7 /* MyCircleViewController.m */,
+				B862046D1DD1989100A5B2D7 /* MyFriendViewController.h */,
+				B862046E1DD1989100A5B2D7 /* MyFriendViewController.m */,
+				B862046F1DD1989100A5B2D7 /* MyPostViewController.h */,
+				B86204701DD1989100A5B2D7 /* MyPostViewController.m */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -737,6 +811,8 @@
 				847D45BE1DCB117300BE00DA /* MessageStoryboard.storyboard */,
 				847D45CA1DCB12A000BE00DA /* MessageViewController.h */,
 				847D45CB1DCB12A000BE00DA /* MessageViewController.m */,
+				B86204AF1DD1A27000A5B2D7 /* WPNoticeTableViewCell.h */,
+				B86204B01DD1A27000A5B2D7 /* WPNoticeTableViewCell.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -747,6 +823,8 @@
 				847D45C01DCB118B00BE00DA /* FriendsStoryboard.storyboard */,
 				847D45C71DCB127400BE00DA /* FriendsViewController.h */,
 				847D45C81DCB127400BE00DA /* FriendsViewController.m */,
+				B86204AC1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.h */,
+				B86204AD1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.m */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -918,6 +996,95 @@
 				84AD72051DD0324100E76947 /* SearchTableViewController.m */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		B86204761DD199D500A5B2D7 /* WPFile */ = {
+			isa = PBXGroup;
+			children = (
+				B86204A21DD19D6D00A5B2D7 /* WPUntil */,
+				B862049E1DD19CF000A5B2D7 /* NSString+WP */,
+				B86204971DD19CB800A5B2D7 /* BarButtonItem+WP */,
+				B862047B1DD19A4600A5B2D7 /* UIColor+WP */,
+				B86204771DD199D500A5B2D7 /* UIView+WP */,
+				B862047F1DD19AF200A5B2D7 /* WPDefine.h */,
+			);
+			path = WPFile;
+			sourceTree = "<group>";
+		};
+		B86204771DD199D500A5B2D7 /* UIView+WP */ = {
+			isa = PBXGroup;
+			children = (
+				B86204781DD199D500A5B2D7 /* UIView+WP.h */,
+				B86204791DD199D500A5B2D7 /* UIView+WP.m */,
+			);
+			path = "UIView+WP";
+			sourceTree = "<group>";
+		};
+		B862047B1DD19A4600A5B2D7 /* UIColor+WP */ = {
+			isa = PBXGroup;
+			children = (
+				B862047C1DD19A4600A5B2D7 /* UIColor+WP.h */,
+				B862047D1DD19A4600A5B2D7 /* UIColor+WP.m */,
+			);
+			path = "UIColor+WP";
+			sourceTree = "<group>";
+		};
+		B86204861DD19BB800A5B2D7 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				B86204801DD19BB400A5B2D7 /* PrivacySettingViewController.h */,
+				B86204811DD19BB400A5B2D7 /* PrivacySettingViewController.m */,
+				B86204821DD19BB400A5B2D7 /* WPPrivicyTableViewCell11.h */,
+				B86204831DD19BB400A5B2D7 /* WPPrivicyTableViewCell11.m */,
+			);
+			name = Privacy;
+			sourceTree = "<group>";
+		};
+		B86204871DD19C4E00A5B2D7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B86204881DD19C4E00A5B2D7 /* BaseViewController.h */,
+				B86204891DD19C4E00A5B2D7 /* BaseViewController.m */,
+				B862048A1DD19C4E00A5B2D7 /* ChangePhoneViewController.h */,
+				B862048B1DD19C4E00A5B2D7 /* ChangePhoneViewController.m */,
+				B862048C1DD19C4E00A5B2D7 /* LoginViewController.h */,
+				B862048D1DD19C4E00A5B2D7 /* LoginViewController.m */,
+				B862048E1DD19C4E00A5B2D7 /* RegisterViewController.h */,
+				B862048F1DD19C4E00A5B2D7 /* RegisterViewController.m */,
+				B86204901DD19C4E00A5B2D7 /* ResetPswViewController.h */,
+				B86204911DD19C4E00A5B2D7 /* ResetPswViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B86204971DD19CB800A5B2D7 /* BarButtonItem+WP */ = {
+			isa = PBXGroup;
+			children = (
+				B86204981DD19CB800A5B2D7 /* UIBarButtonItem+WP.h */,
+				B86204991DD19CB800A5B2D7 /* UIBarButtonItem+WP.m */,
+				B862049A1DD19CB800A5B2D7 /* UIButton+WP.h */,
+				B862049B1DD19CB800A5B2D7 /* UIButton+WP.m */,
+			);
+			path = "BarButtonItem+WP";
+			sourceTree = "<group>";
+		};
+		B862049E1DD19CF000A5B2D7 /* NSString+WP */ = {
+			isa = PBXGroup;
+			children = (
+				B862049F1DD19CF000A5B2D7 /* NSString+WP.h */,
+				B86204A01DD19CF000A5B2D7 /* NSString+WP.m */,
+			);
+			path = "NSString+WP";
+			sourceTree = "<group>";
+		};
+		B86204A21DD19D6D00A5B2D7 /* WPUntil */ = {
+			isa = PBXGroup;
+			children = (
+				B86204A31DD19D6D00A5B2D7 /* WPHelpUtil.h */,
+				B86204A41DD19D6D00A5B2D7 /* WPHelpUtil.m */,
+			);
+			name = WPUntil;
+			path = "UIView+WP/WPUntil";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1092,6 +1259,7 @@
 				4C3C6FB91DCCF38600E2B74C /* MJRefreshNormalHeader.m in Sources */,
 				4C09DBD11DCE2B410097A27D /* NSObject+MJClass.m in Sources */,
 				4C3C6FAF1DCCF38500E2B74C /* MJRefreshComponent.m in Sources */,
+				B86204721DD1989100A5B2D7 /* MineTableViewCell.m in Sources */,
 				847D474D1DCC8C0300BE00DA /* Tool.m in Sources */,
 				4C9BB5F71DCF3DFA00E4FBB2 /* IPTooltipView.m in Sources */,
 				847D47221DCC46CD00BE00DA /* TypeThreeTableViewCell.m in Sources */,
@@ -1102,32 +1270,43 @@
 				4C3C6FB01DCCF38500E2B74C /* MJRefreshFooter.m in Sources */,
 				847D45C91DCB127400BE00DA /* FriendsViewController.m in Sources */,
 				4C09DBD31DCE2B410097A27D /* NSObject+MJKeyValue.m in Sources */,
+				B862049C1DD19CB800A5B2D7 /* UIBarButtonItem+WP.m in Sources */,
 				4C3C6FBA1DCCF38600E2B74C /* MJRefreshStateHeader.m in Sources */,
 				4C3C6FB21DCCF38500E2B74C /* MJRefreshAutoGifFooter.m in Sources */,
 				4C09DBA91DCDD9650097A27D /* AFURLRequestSerialization.m in Sources */,
+				B862047E1DD19A4600A5B2D7 /* UIColor+WP.m in Sources */,
 				84AD72061DD0324100E76947 /* SearchTableViewController.m in Sources */,
 				4C09DBD51DCE2B410097A27D /* NSString+MJExtension.m in Sources */,
 				847D47151DCC3E1F00BE00DA /* PostsView.m in Sources */,
 				4C9BB5EE1DCF3DFA00E4FBB2 /* IPImageCell.m in Sources */,
+				B862049D1DD19CB800A5B2D7 /* UIButton+WP.m in Sources */,
+				B86204961DD19C4E00A5B2D7 /* ResetPswViewController.m in Sources */,
+				B86204731DD1989100A5B2D7 /* MyCircleViewController.m in Sources */,
 				4C9BB5F91DCF3DFA00E4FBB2 /* IPVisionUtilities.m in Sources */,
 				4C3C6FBF1DCCF38600E2B74C /* UIScrollView+MJRefresh.m in Sources */,
 				4C3C6FAE1DCCF38500E2B74C /* MJRefreshBackFooter.m in Sources */,
 				4C3C6FBD1DCCF38600E2B74C /* NSBundle+MJRefresh.m in Sources */,
 				4C09DBCC1DCE2B410097A27D /* MJExtensionConst.m in Sources */,
 				4C09DBA61DCDD9650097A27D /* AFHTTPSessionManager.m in Sources */,
+				B86204921DD19C4E00A5B2D7 /* BaseViewController.m in Sources */,
 				4C3C6FB71DCCF38500E2B74C /* MJRefreshBackStateFooter.m in Sources */,
 				4C9BB5FA1DCF3DFA00E4FBB2 /* IPZoomScrollView.m in Sources */,
+				B86204711DD1989100A5B2D7 /* AccountSafeViewController.m in Sources */,
 				4C09DBA71DCDD9650097A27D /* AFNetworkReachabilityManager.m in Sources */,
 				4C3C6FB81DCCF38600E2B74C /* MJRefreshGifHeader.m in Sources */,
 				4C9BB5F01DCF3DFA00E4FBB2 /* IPPreviewView.m in Sources */,
+				B86204AE1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.m in Sources */,
 				4C09DBF11DCF23CE0097A27D /* SelectView.m in Sources */,
 				4C09DBD01DCE2B410097A27D /* MJPropertyType.m in Sources */,
+				B86204741DD1989100A5B2D7 /* MyFriendViewController.m in Sources */,
 				847D45991DCAE17D00BE00DA /* ViewController.m in Sources */,
 				4C9BB5E91DCF3DFA00E4FBB2 /* IPAlbumView.m in Sources */,
+				B86204751DD1989100A5B2D7 /* MyPostViewController.m in Sources */,
 				4C09DBCF1DCE2B410097A27D /* MJPropertyKey.m in Sources */,
 				847D45D21DCB131500BE00DA /* MainViewController.m in Sources */,
 				847D45961DCAE17D00BE00DA /* AppDelegate.m in Sources */,
 				4C9BB5F61DCF3DFA00E4FBB2 /* IPTakeVideoViewController.m in Sources */,
+				B86204A11DD19CF000A5B2D7 /* NSString+WP.m in Sources */,
 				847D471D1DCC46B800BE00DA /* TypeTowTableViewCell.m in Sources */,
 				4C09DBAB1DCDD9650097A27D /* AFURLSessionManager.m in Sources */,
 				4C09DBD81DCE2D3D0097A27D /* PostImage.m in Sources */,
@@ -1138,11 +1317,17 @@
 				4C9BB5F81DCF3DFA00E4FBB2 /* IPVision.m in Sources */,
 				4C09DBB31DCE21F00097A27D /* Toast.m in Sources */,
 				847D45C61DCB11EC00BE00DA /* DynamicViewController.m in Sources */,
+				B86204841DD19BB400A5B2D7 /* PrivacySettingViewController.m in Sources */,
+				B86204851DD19BB400A5B2D7 /* WPPrivicyTableViewCell11.m in Sources */,
+				B86204A51DD19D6D00A5B2D7 /* WPHelpUtil.m in Sources */,
 				4C9BB5E81DCF3DFA00E4FBB2 /* IPAlbumModel.m in Sources */,
 				4C09DBAA1DCDD9650097A27D /* AFURLResponseSerialization.m in Sources */,
+				B86204941DD19C4E00A5B2D7 /* LoginViewController.m in Sources */,
 				4C09DBD41DCE2B410097A27D /* NSObject+MJProperty.m in Sources */,
+				B862047A1DD199D500A5B2D7 /* UIView+WP.m in Sources */,
 				4C9BB5F11DCF3DFA00E4FBB2 /* IPTakeMediaManager.m in Sources */,
 				4C3C6FB11DCCF38500E2B74C /* MJRefreshHeader.m in Sources */,
+				B86204931DD19C4E00A5B2D7 /* ChangePhoneViewController.m in Sources */,
 				4C09DBAF1DCE1FCC0097A27D /* LoadData.m in Sources */,
 				4C9BB5EC1DCF3DFA00E4FBB2 /* IPAssetModel.m in Sources */,
 				4C09DBA81DCDD9650097A27D /* AFSecurityPolicy.m in Sources */,
@@ -1157,6 +1342,8 @@
 				4C9BB5EB1DCF3DFA00E4FBB2 /* IPAssetManager.m in Sources */,
 				4C09DBD21DCE2B410097A27D /* NSObject+MJCoding.m in Sources */,
 				4C3C6FC01DCCF38600E2B74C /* UIView+MJExtension.m in Sources */,
+				B86204951DD19C4E00A5B2D7 /* RegisterViewController.m in Sources */,
+				B86204B11DD1A27000A5B2D7 /* WPNoticeTableViewCell.m in Sources */,
 				4C9BB5E61DCF3DFA00E4FBB2 /* IP3DTouchPreviewVC.m in Sources */,
 				847D45CF1DCB12D800BE00DA /* MyViewController.m in Sources */,
 				4C9BB5F31DCF3DFA00E4FBB2 /* IPTapDetectImageView.m in Sources */,
@@ -1289,7 +1476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Post/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1302,7 +1489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Post/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
