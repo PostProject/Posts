@@ -90,6 +90,9 @@
 		4CC8B1881DD88EE600586FDB /* SearchCircleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8B1871DD88EE600586FDB /* SearchCircleTableViewController.m */; };
 		4CC8B18A1DD891A100586FDB /* AddCircleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B1891DD891A100586FDB /* AddCircleStoryboard.storyboard */; };
 		4CC8B18D1DD891BA00586FDB /* AddCircleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8B18C1DD891BA00586FDB /* AddCircleTableViewController.m */; };
+		4CC8B1911DD8B16B00586FDB /* invite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B18E1DD8B16A00586FDB /* invite.png */; };
+		4CC8B1921DD8B16B00586FDB /* invite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B18F1DD8B16A00586FDB /* invite@2x.png */; };
+		4CC8B1931DD8B16B00586FDB /* invite@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B1901DD8B16A00586FDB /* invite@3x.png */; };
 		84505D241DD30C44003E9A4D /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D231DD30C44003E9A4D /* PostView.m */; };
 		84505D271DD3126F003E9A4D /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D261DD3126F003E9A4D /* CircleView.m */; };
 		84505D421DD316D0003E9A4D /* PostsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D301DD316D0003E9A4D /* PostsView.m */; };
@@ -346,6 +349,9 @@
 		4CC8B1891DD891A100586FDB /* AddCircleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddCircleStoryboard.storyboard; sourceTree = "<group>"; };
 		4CC8B18B1DD891BA00586FDB /* AddCircleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCircleTableViewController.h; sourceTree = "<group>"; };
 		4CC8B18C1DD891BA00586FDB /* AddCircleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCircleTableViewController.m; sourceTree = "<group>"; };
+		4CC8B18E1DD8B16A00586FDB /* invite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invite.png; sourceTree = "<group>"; };
+		4CC8B18F1DD8B16A00586FDB /* invite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invite@2x.png"; sourceTree = "<group>"; };
+		4CC8B1901DD8B16A00586FDB /* invite@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invite@3x.png"; sourceTree = "<group>"; };
 		84505D221DD30C44003E9A4D /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
 		84505D231DD30C44003E9A4D /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
 		84505D251DD3126F003E9A4D /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
@@ -982,6 +988,9 @@
 		847D45D51DCB191800BE00DA /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				4CC8B18E1DD8B16A00586FDB /* invite.png */,
+				4CC8B18F1DD8B16A00586FDB /* invite@2x.png */,
+				4CC8B1901DD8B16A00586FDB /* invite@3x.png */,
 				4CC8B1401DCF5FB600586FDB /* bar_btn_icon_returntext_white.png */,
 				4CC8B1381DCF5AD000586FDB /* album_icon_check_p.png */,
 				4CC8B1391DCF5AD000586FDB /* album_icon_check.png */,
@@ -1267,8 +1276,10 @@
 				4C09DBEB1DCF1C870097A27D /* speck.png in Resources */,
 				4C09DBE11DCF172F0097A27D /* AddPostsStoryboard.storyboard in Resources */,
 				847D46EF1DCB3D1800BE00DA /* add@3x.png in Resources */,
+				4CC8B1911DD8B16B00586FDB /* invite.png in Resources */,
 				847D45A11DCAE17D00BE00DA /* LaunchScreen.storyboard in Resources */,
 				4C09DC001DCF27F20097A27D /* addImage@2x.png in Resources */,
+				4CC8B1921DD8B16B00586FDB /* invite@2x.png in Resources */,
 				847D47481DCC77C600BE00DA /* comment.png in Resources */,
 				4CC8B18A1DD891A100586FDB /* AddCircleStoryboard.storyboard in Resources */,
 				847D472D1DCC726C00BE00DA /* addFriends.png in Resources */,
@@ -1299,6 +1310,7 @@
 				847D470A1DCC3B0100BE00DA /* voice@2x.png in Resources */,
 				847D47021DCC390C00BE00DA /* more.png in Resources */,
 				847D459E1DCAE17D00BE00DA /* Assets.xcassets in Resources */,
+				4CC8B1931DD8B16B00586FDB /* invite@3x.png in Resources */,
 				84505D441DD316D0003E9A4D /* TypeOneTableViewCell.xib in Resources */,
 				847D45C31DCB119800BE00DA /* DynamicStoryboard.storyboard in Resources */,
 				4C09DBF31DCF23D80097A27D /* SelectView.xib in Resources */,

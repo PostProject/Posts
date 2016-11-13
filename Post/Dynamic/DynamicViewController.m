@@ -13,7 +13,7 @@
 
 
 
-@interface DynamicViewController ()<UIScrollViewDelegate>
+@interface DynamicViewController ()<UIScrollViewDelegate,UIActionSheetDelegate>
 {
     UIButton *_btnDyanmic;
     UIButton *_btnCircle;
@@ -160,8 +160,10 @@
 -(void)topAction:(UIButton *)btn{
     /// page：判断是否是帖子界面
     NSInteger page = self.mainScroll.contentOffset.x/UISCREW;
-    UIStoryboard *storyBoard;
+    
+    UIActionSheet *actionSheet;
     if (btn.tag == 1) {
+        UIStoryboard *storyBoard;
         MyLog(@"搜索");
         if (page == 0) {
             MyLog(@"搜索帖子");
@@ -171,21 +173,38 @@
             storyBoard = [UIStoryboard storyboardWithName:@"SearchCircleStoryboard" bundle:nil];
 
         }
+        [self presentViewController:storyBoard.instantiateInitialViewController animated:YES completion:nil];
+        return;
         
-    }else{
-        MyLog(@"添加");
-        if (page == 0) {
-            MyLog(@"添加帖子");
-             storyBoard = [UIStoryboard storyboardWithName:@"AddPostsStoryboard" bundle:nil];
-        }else{
-            MyLog(@"添加圈子");
-            
-            storyBoard = [UIStoryboard storyboardWithName:@"AddCircleStoryboard" bundle:nil];
-        }
-      
     }
+    actionSheet = [[UIActionSheet alloc] initWithTitle:@"提示" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"发帖",@"创建圈层",nil];
+    ///添加
+    actionSheet.tag = 2;
+
+    [actionSheet showInView:self.view];
     
-    [self presentViewController:storyBoard.instantiateInitialViewController animated:YES completion:nil];
+    
+    
+}
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    UIStoryboard *storyBoard;
+    if (actionSheet.tag == 2) {
+        
+        if (buttonIndex == 0) {
+            MyLog(@"发帖");
+             storyBoard = [UIStoryboard storyboardWithName:@"AddPostsStoryboard" bundle:nil];
+            
+        }
+        if (buttonIndex == 1) {
+           MyLog(@"创建圈层");
+            storyBoard = [UIStoryboard storyboardWithName:@"AddCircleStoryboard" bundle:nil];
+
+        }
+        
+    }
+    if (storyBoard) {
+        [self presentViewController:storyBoard.instantiateInitialViewController animated:YES completion:nil];
+    }
     
 }
 - (void)didReceiveMemoryWarning {
