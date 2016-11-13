@@ -158,14 +158,31 @@
     }
 }
 -(void)topAction:(UIButton *)btn{
+    /// page：判断是否是帖子界面
+    NSInteger page = self.mainScroll.contentOffset.x/UISCREW;
     UIStoryboard *storyBoard;
     if (btn.tag == 1) {
         MyLog(@"搜索");
-        storyBoard = [UIStoryboard storyboardWithName:@"SearchStoryboard" bundle:nil];
+        if (page == 0) {
+            MyLog(@"搜索帖子");
+            storyBoard = [UIStoryboard storyboardWithName:@"SearchPostStoryboard" bundle:nil];
+        }else{
+            MyLog(@"搜索圈子");
+            storyBoard = [UIStoryboard storyboardWithName:@"SearchCircleStoryboard" bundle:nil];
+
+        }
         
     }else{
         MyLog(@"添加");
-       storyBoard = [UIStoryboard storyboardWithName:@"AddPostsStoryboard" bundle:nil];
+        if (page == 0) {
+            MyLog(@"添加帖子");
+             storyBoard = [UIStoryboard storyboardWithName:@"AddPostsStoryboard" bundle:nil];
+        }else{
+            MyLog(@"添加圈子");
+            
+            storyBoard = [UIStoryboard storyboardWithName:@"AddCircleStoryboard" bundle:nil];
+        }
+      
     }
     
     [self presentViewController:storyBoard.instantiateInitialViewController animated:YES completion:nil];

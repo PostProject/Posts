@@ -1,5 +1,5 @@
 //
-//  SearchTableViewController.h
+//  SearchPostTableViewController.h
 //  Post
 //
 //  Created by admin on 2016/11/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchTableViewController : UITableViewController
+@interface SearchPostTableViewController : UITableViewController
 
 @end

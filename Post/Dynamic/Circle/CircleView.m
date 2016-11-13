@@ -147,12 +147,12 @@
     if (section == 1) {
         row = self.circleModel.myCircleArray.count;
         ///测试数据
-        row = 10;
+        row = 5;
     }
     if (section == 2) {
         row = self.circleModel.joinCircleArray.count;
         ///测试数据
-        row = 10;
+        row = 5;
     }
     return row;
 }

@@ -1,18 +1,18 @@
 //
-//  SearchTableViewController.m
+//  SearchPostTableViewController.m
 //  Post
 //
 //  Created by admin on 2016/11/7.
 //  Copyright © 2016年 Post. All rights reserved.
 //
 
-#import "SearchTableViewController.h"
+#import "SearchPosTableViewController.h"
 
-@interface SearchTableViewController ()
+@interface SearchPostTableViewController ()
 
 @end
 
-@implementation SearchTableViewController
+@implementation SearchPostTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

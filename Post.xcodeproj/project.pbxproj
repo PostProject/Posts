@@ -86,6 +86,10 @@
 		4CC8B13E1DCF5C3700586FDB /* img_icon_check_Big_p.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B13C1DCF5C3700586FDB /* img_icon_check_Big_p.png */; };
 		4CC8B13F1DCF5C3700586FDB /* img_icon_check_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B13D1DCF5C3700586FDB /* img_icon_check_Big.png */; };
 		4CC8B1411DCF5FB600586FDB /* bar_btn_icon_returntext_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B1401DCF5FB600586FDB /* bar_btn_icon_returntext_white.png */; };
+		4CC8B1821DD88D8800586FDB /* SearchCircleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B1811DD88D8800586FDB /* SearchCircleStoryboard.storyboard */; };
+		4CC8B1881DD88EE600586FDB /* SearchCircleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8B1871DD88EE600586FDB /* SearchCircleTableViewController.m */; };
+		4CC8B18A1DD891A100586FDB /* AddCircleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B1891DD891A100586FDB /* AddCircleStoryboard.storyboard */; };
+		4CC8B18D1DD891BA00586FDB /* AddCircleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC8B18C1DD891BA00586FDB /* AddCircleTableViewController.m */; };
 		84505D241DD30C44003E9A4D /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D231DD30C44003E9A4D /* PostView.m */; };
 		84505D271DD3126F003E9A4D /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D261DD3126F003E9A4D /* CircleView.m */; };
 		84505D421DD316D0003E9A4D /* PostsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D301DD316D0003E9A4D /* PostsView.m */; };
@@ -156,8 +160,8 @@
 		847D47491DCC77C600BE00DA /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 847D47431DCC77C600BE00DA /* comment@2x.png */; };
 		847D474A1DCC77C600BE00DA /* comment@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 847D47441DCC77C600BE00DA /* comment@3x.png */; };
 		847D474D1DCC8C0300BE00DA /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D474C1DCC8C0300BE00DA /* Tool.m */; };
-		84AD72031DD0321C00E76947 /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */; };
-		84AD72061DD0324100E76947 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD72051DD0324100E76947 /* SearchTableViewController.m */; };
+		84AD72031DD0321C00E76947 /* SearchPostStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD72021DD0321C00E76947 /* SearchPostStoryboard.storyboard */; };
+		84AD72061DD0324100E76947 /* SearchPosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD72051DD0324100E76947 /* SearchPosTableViewController.m */; };
 		B86204711DD1989100A5B2D7 /* AccountSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204681DD1989100A5B2D7 /* AccountSafeViewController.m */; };
 		B86204721DD1989100A5B2D7 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B862046A1DD1989100A5B2D7 /* MineTableViewCell.m */; };
 		B86204731DD1989100A5B2D7 /* MyCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B862046C1DD1989100A5B2D7 /* MyCircleViewController.m */; };
@@ -336,6 +340,12 @@
 		4CC8B13C1DCF5C3700586FDB /* img_icon_check_Big_p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_icon_check_Big_p.png; sourceTree = "<group>"; };
 		4CC8B13D1DCF5C3700586FDB /* img_icon_check_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_icon_check_Big.png; sourceTree = "<group>"; };
 		4CC8B1401DCF5FB600586FDB /* bar_btn_icon_returntext_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_btn_icon_returntext_white.png; sourceTree = "<group>"; };
+		4CC8B1811DD88D8800586FDB /* SearchCircleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchCircleStoryboard.storyboard; sourceTree = "<group>"; };
+		4CC8B1861DD88EE600586FDB /* SearchCircleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCircleTableViewController.h; sourceTree = "<group>"; };
+		4CC8B1871DD88EE600586FDB /* SearchCircleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCircleTableViewController.m; sourceTree = "<group>"; };
+		4CC8B1891DD891A100586FDB /* AddCircleStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddCircleStoryboard.storyboard; sourceTree = "<group>"; };
+		4CC8B18B1DD891BA00586FDB /* AddCircleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCircleTableViewController.h; sourceTree = "<group>"; };
+		4CC8B18C1DD891BA00586FDB /* AddCircleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCircleTableViewController.m; sourceTree = "<group>"; };
 		84505D221DD30C44003E9A4D /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
 		84505D231DD30C44003E9A4D /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
 		84505D251DD3126F003E9A4D /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
@@ -432,9 +442,9 @@
 		847D47441DCC77C600BE00DA /* comment@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@3x.png"; sourceTree = "<group>"; };
 		847D474B1DCC8C0300BE00DA /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		847D474C1DCC8C0300BE00DA /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
-		84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
-		84AD72041DD0324100E76947 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
-		84AD72051DD0324100E76947 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		84AD72021DD0321C00E76947 /* SearchPostStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchPostStoryboard.storyboard; sourceTree = "<group>"; };
+		84AD72041DD0324100E76947 /* SearchPosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchPosTableViewController.h; sourceTree = "<group>"; };
+		84AD72051DD0324100E76947 /* SearchPosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchPosTableViewController.m; sourceTree = "<group>"; };
 		B86204671DD1989100A5B2D7 /* AccountSafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSafeViewController.h; sourceTree = "<group>"; };
 		B86204681DD1989100A5B2D7 /* AccountSafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSafeViewController.m; sourceTree = "<group>"; };
 		B86204691DD1989100A5B2D7 /* MineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
@@ -561,6 +571,9 @@
 				4C09DBE01DCF172F0097A27D /* AddPostsStoryboard.storyboard */,
 				4C09DBE51DCF18290097A27D /* AddPostsTableViewController.h */,
 				4C09DBE61DCF18290097A27D /* AddPostsTableViewController.m */,
+				4CC8B1891DD891A100586FDB /* AddCircleStoryboard.storyboard */,
+				4CC8B18B1DD891BA00586FDB /* AddCircleTableViewController.h */,
+				4CC8B18C1DD891BA00586FDB /* AddCircleTableViewController.m */,
 			);
 			path = AddPosts;
 			sourceTree = "<group>";
@@ -1050,9 +1063,12 @@
 		84AD72011DD0320C00E76947 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				84AD72021DD0321C00E76947 /* SearchStoryboard.storyboard */,
-				84AD72041DD0324100E76947 /* SearchTableViewController.h */,
-				84AD72051DD0324100E76947 /* SearchTableViewController.m */,
+				84AD72021DD0321C00E76947 /* SearchPostStoryboard.storyboard */,
+				84AD72041DD0324100E76947 /* SearchPosTableViewController.h */,
+				84AD72051DD0324100E76947 /* SearchPosTableViewController.m */,
+				4CC8B1811DD88D8800586FDB /* SearchCircleStoryboard.storyboard */,
+				4CC8B1861DD88EE600586FDB /* SearchCircleTableViewController.h */,
+				4CC8B1871DD88EE600586FDB /* SearchCircleTableViewController.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -1235,13 +1251,14 @@
 				84505D461DD316D0003E9A4D /* TypeTowTableViewCell.xib in Resources */,
 				847D46F21DCB3D1800BE00DA /* search@3x.png in Resources */,
 				847D47461DCC77C600BE00DA /* shear@2x.png in Resources */,
-				84AD72031DD0321C00E76947 /* SearchStoryboard.storyboard in Resources */,
+				84AD72031DD0321C00E76947 /* SearchPostStoryboard.storyboard in Resources */,
 				847D47391DCC773700BE00DA /* ThumbsUp.png in Resources */,
 				847D46F11DCB3D1800BE00DA /* search@2x.png in Resources */,
 				847D474A1DCC77C600BE00DA /* comment@3x.png in Resources */,
 				4C3C6FBB1DCCF38600E2B74C /* MJRefresh.bundle in Resources */,
 				847D47301DCC726C00BE00DA /* addFriendsUnSelect.png in Resources */,
 				4C09DBF71DCF24FA0097A27D /* closeSpeck.png in Resources */,
+				4CC8B1821DD88D8800586FDB /* SearchCircleStoryboard.storyboard in Resources */,
 				4C09DBCB1DCE2B410097A27D /* Info.plist in Resources */,
 				847D47491DCC77C600BE00DA /* comment@2x.png in Resources */,
 				847D47101DCC3B6A00BE00DA /* info.png in Resources */,
@@ -1253,6 +1270,7 @@
 				847D45A11DCAE17D00BE00DA /* LaunchScreen.storyboard in Resources */,
 				4C09DC001DCF27F20097A27D /* addImage@2x.png in Resources */,
 				847D47481DCC77C600BE00DA /* comment.png in Resources */,
+				4CC8B18A1DD891A100586FDB /* AddCircleStoryboard.storyboard in Resources */,
 				847D472D1DCC726C00BE00DA /* addFriends.png in Resources */,
 				847D47451DCC77C600BE00DA /* shear.png in Resources */,
 				847D46EE1DCB3D1800BE00DA /* add@2x.png in Resources */,
@@ -1332,10 +1350,11 @@
 				4C3C6FB21DCCF38500E2B74C /* MJRefreshAutoGifFooter.m in Sources */,
 				4C09DBA91DCDD9650097A27D /* AFURLRequestSerialization.m in Sources */,
 				B862047E1DD19A4600A5B2D7 /* UIColor+WP.m in Sources */,
-				84AD72061DD0324100E76947 /* SearchTableViewController.m in Sources */,
+				84AD72061DD0324100E76947 /* SearchPosTableViewController.m in Sources */,
 				4C09DBD51DCE2B410097A27D /* NSString+MJExtension.m in Sources */,
 				4C9BB5EE1DCF3DFA00E4FBB2 /* IPImageCell.m in Sources */,
 				B862049D1DD19CB800A5B2D7 /* UIButton+WP.m in Sources */,
+				4CC8B1881DD88EE600586FDB /* SearchCircleTableViewController.m in Sources */,
 				B86204961DD19C4E00A5B2D7 /* ResetPswViewController.m in Sources */,
 				B86204731DD1989100A5B2D7 /* MyCircleViewController.m in Sources */,
 				4C9BB5F91DCF3DFA00E4FBB2 /* IPVisionUtilities.m in Sources */,
@@ -1352,6 +1371,7 @@
 				84505D491DD316D0003E9A4D /* TypeFourTableViewCell.m in Sources */,
 				B86204711DD1989100A5B2D7 /* AccountSafeViewController.m in Sources */,
 				4C09DBA71DCDD9650097A27D /* AFNetworkReachabilityManager.m in Sources */,
+				4CC8B18D1DD891BA00586FDB /* AddCircleTableViewController.m in Sources */,
 				4C3C6FB81DCCF38600E2B74C /* MJRefreshGifHeader.m in Sources */,
 				4C9BB5F01DCF3DFA00E4FBB2 /* IPPreviewView.m in Sources */,
 				B86204AE1DD1A26300A5B2D7 /* GoodsFriendTableViewCell.m in Sources */,
@@ -1543,7 +1563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Weiwei Li (HPS3NNUC52)";
-				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/chenshiwen/Documents/私人项目/Posts/Post/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1559,7 +1579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Weiwei Li (HPS3NNUC52)";
-				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/chenshiwen/Documents/私人项目/Posts/Post/Public/PrefixHeader.pch";
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
