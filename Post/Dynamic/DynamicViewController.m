@@ -13,7 +13,7 @@
 
 
 
-@interface DynamicViewController ()<UIScrollViewDelegate,UIActionSheetDelegate>
+@interface DynamicViewController ()<UIScrollViewDelegate,UIActionSheetDelegate,PostViewDelegate>
 {
     UIButton *_btnDyanmic;
     UIButton *_btnCircle;
@@ -125,6 +125,7 @@
 -(PostView *)postsView{
     if (!_postsView) {
         _postsView = [[PostView alloc] initWithFrame:CGRectMake(0, 64, UISCREW, UISCREH -108)];
+        _postsView.delegate = self;
     }
     return _postsView;
 }
@@ -207,8 +208,12 @@
     }
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+
+/**
+ postView代理
+ */
+-(void)postViewCommentActionDelegate{
+    MyLog(@"跳往评论列表");
 }
 
 

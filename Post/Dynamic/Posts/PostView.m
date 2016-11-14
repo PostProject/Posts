@@ -12,6 +12,8 @@
 #import "TypeTowTableViewCell.h"
 #import "TypeThreeTableViewCell.h"
 #import "PostImage.h"
+
+
 /**
  出去消息后高度后Cell的高度
  */

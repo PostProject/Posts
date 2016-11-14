@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PostViewDelegate <NSObject>
+
+-(void)postViewCommentActionDelegate;
+
+@end
+
+
 @interface PostView : UIView
 @property (nonatomic , strong) UITableView *dynamicTable;
+@property (nonatomic, assign) id <PostViewDelegate> delegate;
 @end
