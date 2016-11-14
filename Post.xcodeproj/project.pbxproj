@@ -165,6 +165,13 @@
 		847D474D1DCC8C0300BE00DA /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D474C1DCC8C0300BE00DA /* Tool.m */; };
 		84AD72031DD0321C00E76947 /* SearchPostStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AD72021DD0321C00E76947 /* SearchPostStoryboard.storyboard */; };
 		84AD72061DD0324100E76947 /* SearchPosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD72051DD0324100E76947 /* SearchPosTableViewController.m */; };
+		84CDF83C1DD95EF0002601A8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CDF83B1DD95EF0002601A8 /* User.m */; };
+		84CDF8711DD9703F002601A8 /* btnInvite.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CDF86E1DD9703F002601A8 /* btnInvite.png */; };
+		84CDF8721DD9703F002601A8 /* btnInvite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CDF86F1DD9703F002601A8 /* btnInvite@2x.png */; };
+		84CDF8731DD9703F002601A8 /* btnInvite@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CDF8701DD9703F002601A8 /* btnInvite@3x.png */; };
+		84CDF8771DD97222002601A8 /* circleAddUser.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CDF8741DD97222002601A8 /* circleAddUser.png */; };
+		84CDF8781DD97222002601A8 /* circleAddUser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CDF8751DD97222002601A8 /* circleAddUser@2x.png */; };
+		84CDF8791DD97222002601A8 /* circleAddUser@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84CDF8761DD97222002601A8 /* circleAddUser@3x.png */; };
 		B86204711DD1989100A5B2D7 /* AccountSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86204681DD1989100A5B2D7 /* AccountSafeViewController.m */; };
 		B86204721DD1989100A5B2D7 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B862046A1DD1989100A5B2D7 /* MineTableViewCell.m */; };
 		B86204731DD1989100A5B2D7 /* MyCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B862046C1DD1989100A5B2D7 /* MyCircleViewController.m */; };
@@ -451,6 +458,14 @@
 		84AD72021DD0321C00E76947 /* SearchPostStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchPostStoryboard.storyboard; sourceTree = "<group>"; };
 		84AD72041DD0324100E76947 /* SearchPosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchPosTableViewController.h; sourceTree = "<group>"; };
 		84AD72051DD0324100E76947 /* SearchPosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchPosTableViewController.m; sourceTree = "<group>"; };
+		84CDF83A1DD95EF0002601A8 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		84CDF83B1DD95EF0002601A8 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		84CDF86E1DD9703F002601A8 /* btnInvite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnInvite.png; sourceTree = "<group>"; };
+		84CDF86F1DD9703F002601A8 /* btnInvite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnInvite@2x.png"; sourceTree = "<group>"; };
+		84CDF8701DD9703F002601A8 /* btnInvite@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnInvite@3x.png"; sourceTree = "<group>"; };
+		84CDF8741DD97222002601A8 /* circleAddUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circleAddUser.png; sourceTree = "<group>"; };
+		84CDF8751DD97222002601A8 /* circleAddUser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circleAddUser@2x.png"; sourceTree = "<group>"; };
+		84CDF8761DD97222002601A8 /* circleAddUser@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circleAddUser@3x.png"; sourceTree = "<group>"; };
 		B86204671DD1989100A5B2D7 /* AccountSafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSafeViewController.h; sourceTree = "<group>"; };
 		B86204681DD1989100A5B2D7 /* AccountSafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSafeViewController.m; sourceTree = "<group>"; };
 		B86204691DD1989100A5B2D7 /* MineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
@@ -852,6 +867,8 @@
 				84505D6A1DD31C55003E9A4D /* CircleModel.m */,
 				84505D6C1DD31D69003E9A4D /* Cricle.h */,
 				84505D6D1DD31D69003E9A4D /* Cricle.m */,
+				84CDF83A1DD95EF0002601A8 /* User.h */,
+				84CDF83B1DD95EF0002601A8 /* User.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -988,6 +1005,12 @@
 		847D45D51DCB191800BE00DA /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				84CDF8741DD97222002601A8 /* circleAddUser.png */,
+				84CDF8751DD97222002601A8 /* circleAddUser@2x.png */,
+				84CDF8761DD97222002601A8 /* circleAddUser@3x.png */,
+				84CDF86E1DD9703F002601A8 /* btnInvite.png */,
+				84CDF86F1DD9703F002601A8 /* btnInvite@2x.png */,
+				84CDF8701DD9703F002601A8 /* btnInvite@3x.png */,
 				4CC8B18E1DD8B16A00586FDB /* invite.png */,
 				4CC8B18F1DD8B16A00586FDB /* invite@2x.png */,
 				4CC8B1901DD8B16A00586FDB /* invite@3x.png */,
@@ -1263,12 +1286,16 @@
 				84AD72031DD0321C00E76947 /* SearchPostStoryboard.storyboard in Resources */,
 				847D47391DCC773700BE00DA /* ThumbsUp.png in Resources */,
 				847D46F11DCB3D1800BE00DA /* search@2x.png in Resources */,
+				84CDF8781DD97222002601A8 /* circleAddUser@2x.png in Resources */,
 				847D474A1DCC77C600BE00DA /* comment@3x.png in Resources */,
 				4C3C6FBB1DCCF38600E2B74C /* MJRefresh.bundle in Resources */,
 				847D47301DCC726C00BE00DA /* addFriendsUnSelect.png in Resources */,
+				84CDF8711DD9703F002601A8 /* btnInvite.png in Resources */,
 				4C09DBF71DCF24FA0097A27D /* closeSpeck.png in Resources */,
+				84CDF8731DD9703F002601A8 /* btnInvite@3x.png in Resources */,
 				4CC8B1821DD88D8800586FDB /* SearchCircleStoryboard.storyboard in Resources */,
 				4C09DBCB1DCE2B410097A27D /* Info.plist in Resources */,
+				84CDF8721DD9703F002601A8 /* btnInvite@2x.png in Resources */,
 				847D47491DCC77C600BE00DA /* comment@2x.png in Resources */,
 				847D47101DCC3B6A00BE00DA /* info.png in Resources */,
 				847D470C1DCC3B0100BE00DA /* voice.png in Resources */,
@@ -1287,6 +1314,7 @@
 				847D46EE1DCB3D1800BE00DA /* add@2x.png in Resources */,
 				847D47061DCC3A2A00BE00DA /* header.png in Resources */,
 				4CC8B13B1DCF5AD000586FDB /* album_icon_check.png in Resources */,
+				84CDF8771DD97222002601A8 /* circleAddUser.png in Resources */,
 				847D47321DCC726C00BE00DA /* addFriendsUnSelect@3x.png in Resources */,
 				4C09DC011DCF27F20097A27D /* addImage@3x.png in Resources */,
 				847D472F1DCC726C00BE00DA /* addFriends@3x.png in Resources */,
@@ -1295,6 +1323,7 @@
 				847D47041DCC390C00BE00DA /* more@3x.png in Resources */,
 				847D473B1DCC773700BE00DA /* ThumbsUp@3x.png in Resources */,
 				4C09DBF91DCF24FA0097A27D /* closeSpeck@3x.png in Resources */,
+				84CDF8791DD97222002601A8 /* circleAddUser@3x.png in Resources */,
 				4C09DBED1DCF1C870097A27D /* speck@3x.png in Resources */,
 				4C09DBFF1DCF27F20097A27D /* addImage.png in Resources */,
 				4CC8B1411DCF5FB600586FDB /* bar_btn_icon_returntext_white.png in Resources */,
@@ -1371,6 +1400,7 @@
 				B86204731DD1989100A5B2D7 /* MyCircleViewController.m in Sources */,
 				4C9BB5F91DCF3DFA00E4FBB2 /* IPVisionUtilities.m in Sources */,
 				4C3C6FBF1DCCF38600E2B74C /* UIScrollView+MJRefresh.m in Sources */,
+				84CDF83C1DD95EF0002601A8 /* User.m in Sources */,
 				4C3C6FAE1DCCF38500E2B74C /* MJRefreshBackFooter.m in Sources */,
 				4C3C6FBD1DCCF38600E2B74C /* NSBundle+MJRefresh.m in Sources */,
 				4C09DBCC1DCE2B410097A27D /* MJExtensionConst.m in Sources */,
@@ -1575,7 +1605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Weiwei Li (HPS3NNUC52)";
-				GCC_PREFIX_HEADER = "/Users/chenshiwen/Documents/私人项目/Posts/Post/Public/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1591,7 +1621,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Weiwei Li (HPS3NNUC52)";
-				GCC_PREFIX_HEADER = "/Users/chenshiwen/Documents/私人项目/Posts/Post/Public/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/admin/Desktop/My/Post/Post/Public/PrefixHeader.pch;
 				INFOPLIST_FILE = Post/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
