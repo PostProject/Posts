@@ -14,6 +14,7 @@
 #import "PrivacySettingViewController.h"
 #import "AccountSafeViewController.h"
 #import "LoginViewController.h"
+#import "PersonCenterViewController.h"
 
 
 @interface MyViewController () <UITableViewDataSource,UITableViewDelegate>
@@ -106,6 +107,7 @@
         btnHead.layer.borderColor = [UIColor whiteColor].CGColor;
         btnHead.layer.borderWidth = 2;
         [_headerView addSubview:btnHead];
+        [btnHead addTarget:self action:@selector(personCenterAction) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _headerView;
@@ -190,6 +192,13 @@
     
 }
 
+#pragma mark -- 个人中心
+- (void)personCenterAction {
+    PersonCenterViewController *personCenterVC = [[PersonCenterViewController alloc] init];
+    personCenterVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:personCenterVC animated:YES];
+}
+
 
 
 #pragma mark -- 退出登录
@@ -201,10 +210,6 @@
     [[UIApplication sharedApplication].delegate window].rootViewController = loginVC;
     
 }
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning {

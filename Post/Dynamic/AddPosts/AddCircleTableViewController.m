@@ -8,6 +8,7 @@
 
 #import "AddCircleTableViewController.h"
 #import "User.h"
+#import "InviteFriendsViewController.h"
 
 #define InviteFriendsHeight UISCREW/5
 
@@ -38,9 +39,18 @@
 }
 - (IBAction)inviteFriendsAction{
     MyLog(@"邀请好友");
+    
+    
+    
+    InviteFriendsViewController *inviteFriendsVC = [[InviteFriendsViewController alloc] init];
+    [self.navigationController pushViewController:inviteFriendsVC animated:YES];
+    
+    
+    /*
     for (UIView *view in self.inviteView.subviews) {
         [view removeFromSuperview];
     }
+    
     ///测试数据
     NSMutableArray *array = [[NSMutableArray alloc] init];
     for (int i = 0; i<21; i++) {
@@ -48,6 +58,8 @@
     }
     [self creatInviteFriendsFromUserArray:array];
     [self.tableView reloadData];
+     
+     */
 }
 
 - (void)didReceiveMemoryWarning {
