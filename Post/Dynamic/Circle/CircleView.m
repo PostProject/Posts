@@ -70,14 +70,14 @@
     return _hostArray;
 }
 -(void)loadData{
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     __weak CircleView *weakSelf = self;
-    NSString *url = [NSString stringWithFormat:@"%@getPostByUserId?id=1",HostUrl];
-    [manager GET:url parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    NSString *url = [NSString stringWithFormat:@"%@getPostByUserId?",HostUrl];
+    NSDictionary *params = @{@"id":@"1"};
+    
+    [CSNetWorking GET:url adParams:params adSuccecBlock:^(id responseObject) {
         MyLog(@"FlyElephant: %@", responseObject);
         [weakSelf creatDataArrayFromObj:responseObject];
-    } failure:^(NSURLSessionTask *operation, NSError *error) {
+    } adFaluerBlock:^(NSError *error) {
         MyLog(@"FlyElephant: %@", error);
         [[Toast shareToast] showContent:@"加载失败..." adTime:2];
     }];

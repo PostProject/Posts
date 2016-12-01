@@ -93,6 +93,7 @@
 		4CC8B1911DD8B16B00586FDB /* invite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B18E1DD8B16A00586FDB /* invite.png */; };
 		4CC8B1921DD8B16B00586FDB /* invite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B18F1DD8B16A00586FDB /* invite@2x.png */; };
 		4CC8B1931DD8B16B00586FDB /* invite@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8B1901DD8B16A00586FDB /* invite@3x.png */; };
+		840A68381DF0244E00929CF5 /* CSNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A68371DF0244E00929CF5 /* CSNetWorking.m */; };
 		84505D241DD30C44003E9A4D /* PostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D231DD30C44003E9A4D /* PostView.m */; };
 		84505D271DD3126F003E9A4D /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D261DD3126F003E9A4D /* CircleView.m */; };
 		84505D421DD316D0003E9A4D /* PostsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84505D301DD316D0003E9A4D /* PostsView.m */; };
@@ -394,6 +395,8 @@
 		4CC8B18E1DD8B16A00586FDB /* invite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invite.png; sourceTree = "<group>"; };
 		4CC8B18F1DD8B16A00586FDB /* invite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invite@2x.png"; sourceTree = "<group>"; };
 		4CC8B1901DD8B16A00586FDB /* invite@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invite@3x.png"; sourceTree = "<group>"; };
+		840A68361DF0244E00929CF5 /* CSNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNetWorking.h; sourceTree = "<group>"; };
+		840A68371DF0244E00929CF5 /* CSNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNetWorking.m; sourceTree = "<group>"; };
 		84505D221DD30C44003E9A4D /* PostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostView.h; sourceTree = "<group>"; };
 		84505D231DD30C44003E9A4D /* PostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostView.m; sourceTree = "<group>"; };
 		84505D251DD3126F003E9A4D /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
@@ -636,6 +639,7 @@
 		4C09DB981DCDD9650097A27D /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				840A68351DF0244E00929CF5 /* Custom */,
 				4C09DB991DCDD9650097A27D /* AFHTTPSessionManager.h */,
 				4C09DB9A1DCDD9650097A27D /* AFHTTPSessionManager.m */,
 				4C09DB9B1DCDD9650097A27D /* AFNetworking.h */,
@@ -876,6 +880,15 @@
 				4C9BB5E31DCF3DFA00E4FBB2 /* IPVisionUtilities.m */,
 			);
 			path = IPVision;
+			sourceTree = "<group>";
+		};
+		840A68351DF0244E00929CF5 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				840A68361DF0244E00929CF5 /* CSNetWorking.h */,
+				840A68371DF0244E00929CF5 /* CSNetWorking.m */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		84505D201DD30B86003E9A4D /* Circle */ = {
@@ -1738,6 +1751,7 @@
 				4C3C6FB61DCCF38500E2B74C /* MJRefreshBackNormalFooter.m in Sources */,
 				84505D471DD316D0003E9A4D /* TypeThreeTableViewCell.m in Sources */,
 				4C9BB5ED1DCF3DFA00E4FBB2 /* IPickerViewController.m in Sources */,
+				840A68381DF0244E00929CF5 /* CSNetWorking.m in Sources */,
 				B84F95BF1DEACC3B002F40AE /* SDWebImageCompat.m in Sources */,
 				84505D241DD30C44003E9A4D /* PostView.m in Sources */,
 				4C3C6FBE1DCCF38600E2B74C /* UIScrollView+MJExtension.m in Sources */,
