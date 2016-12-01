@@ -185,6 +185,8 @@
 //    BaseTabBarViewController *tabbarVC = [[BaseTabBarViewController alloc] init];
 //    [[UIApplication sharedApplication].delegate window].rootViewController = tabbarVC;
     
+    /*测试数据*/
+    [self dismissViewControllerAnimated:YES completion:nil];
 
 }
 

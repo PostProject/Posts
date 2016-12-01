@@ -9,6 +9,7 @@
 #import "DynamicViewController.h"
 #import "PostView.h"
 #import "CircleView.h"
+#import "LoginViewController.h"
 
 
 
@@ -31,6 +32,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LoginViewController *loginAction = [[LoginViewController alloc] init];
+    [self presentViewController:loginAction animated:YES completion:nil];
     
     
     

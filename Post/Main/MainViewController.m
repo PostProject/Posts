@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "LoginViewController.h"
 
 @interface MainViewController ()
 
@@ -21,6 +22,7 @@
     [self addStoryBoard:@"FriendsStoryboard"];
     [self addStoryBoard:@"MessageStoryboard"];
     [self addStoryBoard:@"MyStoryboard"];
+    
     
 }
 -(void)addStoryBoard:(NSString *)stroyName{
