@@ -22,7 +22,6 @@
 #import "Toast.h"
 #import "MJExtension.h"
 
-
 #import "BaseViewController.h"
 #import "UIView+WP.h"
 #import "UIColor+WP.h"

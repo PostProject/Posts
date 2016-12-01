@@ -16,7 +16,6 @@
 @property (nonatomic,strong) UIView *personInfoView;
 @property (nonatomic,strong) UIView *finishView;
 
-
 @property (nonatomic,strong) UITextField *tfUserName; // 用户名
 @property (nonatomic,strong) UITextField *tfNickname; // 昵称
 @property (nonatomic,strong) UILabel *lbSex; // 性别
