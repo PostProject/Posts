@@ -32,6 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    ///测试数据，要判断是否登录
     LoginViewController *loginAction = [[LoginViewController alloc] init];
     [self presentViewController:loginAction animated:YES completion:nil];
     
