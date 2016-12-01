@@ -207,7 +207,8 @@
     LoginViewController *loginVC = [[LoginViewController alloc] init];
     loginVC.title = @"登录";
     
-    [[UIApplication sharedApplication].delegate window].rootViewController = loginVC;
+//    [[UIApplication sharedApplication].delegate window].rootViewController = loginVC;
+    [self presentViewController:loginVC animated:YES completion:nil];
     
 }
 
